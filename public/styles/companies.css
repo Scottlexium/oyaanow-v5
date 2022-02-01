@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#MAIN_SECTION_WRAPPER{
+    width: 100%;
+}
+#FLEXED_CONTAINER{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#BUS__COMPANIES__UL{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#BUS__COMPANIES__UL li{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    padding: 30px;
+}

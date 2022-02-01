@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/companies.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="MAIN_SECTION_WRAPPER">
+        <h1>Bus list</h1>
+        <div id="FLEXED_CONTAINER">
+    <!-- <ul id="BUS__COMPANIES__UL">
+        <% gigs.forEach(function(gig){ %>
+            <li>
+                <p><%= gig.id%></p>
+                <p id="company"><%= gig.company%></p>
+                <p id="price"><%= gig.price%></p>
+                <p id="date"><%= gig.date%></p>
+                <p id="route"><%= gig.routing%></p>
+                <p>Verified Affiliate</p>
+                <a href="/customer/<%= gig.id%>">Book Now</a>
+            </li>
+          <% }); %>
+    </ul> -->
+
+    <ul id="BUS__COMPANIES__UL">
+        <% if(gigs.length > 0) {%>
+            <% gigs.forEach(gig => { %>
+                <li>
+                    <p><%= gig.id%></p>
+                    <p id="company"><%= gig.company%></p>
+                    <p id="price"><%= gig.price%></p>
+                    <p id="date"><%= gig.date%></p>
+                    <p id="route"><%= gig.routing%></p>
+                    <p>Verified Affiliate</p>
+                    <a href="/customer/<%= gig.id%>">Book Now</a>
+                </li>
+            <% }) %>
+        <% }else { %>
+            <p>There are no bus to display</p>
+        <% } %>
+    </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

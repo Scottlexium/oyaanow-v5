@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Oyaanow || Home</title>
+</head>
+<body>
+
+    <section class="main__section">
+        <form action="/search" id="sc-form" method="GET">
+            <div class="from__div">
+                <label for="">From</label>
+            <select name="term" onchange="dynamic()" id="form_from">
+                <option value="Benin">Benin</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Warri">Warri</option>
+                <option value="Port-Harcourt">Port Harcourt</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Asaba">Asaba</option>
+                <option value="Abuja">Abuja</option>
+                <option selected value="Where from">Where from</option>
+            </select>
+            </div>
+    
+            <div class="to__div">
+                <label for="">To</label>
+            <div id="form-to-div">
+                <select name="term" id="form__to">
+                    <option></option>
+                </select>
+            </div>
+            </div>
+
+            <div style="display: none;" class="vehicle__type" id="vehicle__div">
+                <label class="label_bus_type" for="">Bus Type</label>
+                <div id="bus__elemnt">
+                </div>
+            </div>
+
+            <div class="date__div">
+                <label for="">Departure Date</label>
+            <div id="date-main-div">
+                <input onchange="dateChoice()" type="date" name="date" id="date" value="ok na" >
+            </div>
+            </div>
+
+            <div class="submit__btn__div">
+                <label for="">Submit</label>
+                <button class="book__btn__home" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+<script src="/js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

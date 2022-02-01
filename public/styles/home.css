@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400;1,700;1,800&display=swap');
+:root{
+    --blue: #0057FF;
+    --blue2: #EBF2FF;
+    --background: #E5E5E5;
+    --green: #11A064;
+    --ative_bus_bg: #E4EDFF;
+    --travel_prog_bg: #FFF3E1;
+    --travel_prog_font: #FF9900;
+    --completed_bg: #E0FFF2;
+    --completed_font: #11A064;
+    --cancel_bg: #FFF1F2;
+    --cancel_font: #D60909;
+}
+
+*{
+    font-family: poppins, sans-serif;
+}
+.main__section{
+    width: 100%;
+    display: flex;
+}
+#sc-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.from__div{
+    display: flex;
+    flex-direction: column;
+}
+.from__div select{
+    min-width: 80px;
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+}
+#form-to-div{
+    width: 100%;
+}
+#form-to-div div{
+    width: 100%;
+}
+#form-to-div select{
+    min-width: 100px;
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+}
+.vehicle__type{
+    display: flex;
+    flex-direction: column;
+}
+.vehicle__type select{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+.book__btn__home{
+    height: 40px;
+    width: 100px;
+    background-color: orange;
+    outline: none;
+    border: none;
+    flex-wrap: wrap;
+}
+.submit__btn__div{
+    display: flex;
+    flex-direction: column;
+}
+.submit__btn__div label{
+    visibility: hidden;
+}
+
+.bus__type{
+    font-size: 18px;
+    background-color: #e9e9ed;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.label_bus_type{
+    margin-bottom: 0px;
+}
+#date{
+    min-width: 80px;
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    background-color: #e9e9ed;
+}
+#date__depart__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 20px;
+    background-color: #e9e9ed;
+}
